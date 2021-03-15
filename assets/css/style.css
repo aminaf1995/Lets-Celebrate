@@ -67,8 +67,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: salmon;
+  color: white;
   border-radius: 15px;
   text-shadow: none;
 }
@@ -79,7 +79,7 @@ header nav ul li a:hover {
 
 /* FOOTER STYLES START */
 footer {
-  background: var(--primary-color);
+  background-color: black;
   padding: 40px 35px;
   display: flex;
   justify-content: space-between;
@@ -285,7 +285,7 @@ section {
 
 /* WHAT YOU DO STYLES START */
 .steps { 
-  background: var(--primary-color);
+  background-color: salmon;
 }
 
 .step {
@@ -339,6 +339,63 @@ section {
   color: var(--secondary-color);
 }
 /* WHAT YOU DO STYLES END */
+
+/* First Date*/
+.tips { 
+  background-color: teal;
+}
+
+.tip {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tip:last-child {
+  border-bottom: none;
+}
+
+.tip h3 {
+  color: var(--secondary-color);
+  font-size: 46px;
+  flex: 1 30%;
+}
+
+.tip-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tip-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.tip-img img {
+  max-width: 100%;
+}
+
+.tip-text {
+  flex: 12;
+}
+
+.tip-text p {
+  color: var(--tertiary-color);
+  font-size: 18px;
+}
+
+.tip-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+/* First Date END */
 
 /* MEET THE TRAINERS START */
 .trainers {
