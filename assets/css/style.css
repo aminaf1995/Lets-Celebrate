@@ -27,7 +27,7 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-image: url("../images/celebration.jpeg");
+  background-image: url("https://www.gannett-cdn.com/presto/2019/07/02/USAT/b0a22d42-e938-4b05-98cf-902fdac6dd20-Sparklers.jpg?width=1320&height=892&fit=crop&format=pjpg&auto=webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
@@ -110,7 +110,7 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url('../images/celebration.jpeg');
+  background-image: url('https://www.gannett-cdn.com/presto/2019/07/02/USAT/b0a22d42-e938-4b05-98cf-902fdac6dd20-Sparklers.jpg?width=1320&height=892&fit=crop&format=pjpg&auto=webp');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -329,14 +329,14 @@ section {
 }
 
 .step-text p {
-  color: var(--tertiary-color);
+  color: grey;
   font-size: 18px;
 }
 
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 /* WHAT YOU DO STYLES END */
 
@@ -386,7 +386,7 @@ section {
 }
 
 .tip-text p {
-  color: var(--tertiary-color);
+  color: white;
   font-size: 18px;
 }
 
@@ -439,11 +439,11 @@ section {
 
 /* REACH OUT STYLES START */
 .contact {
-  background: var(--secondary-color);
+  background-color: rgb(46, 221, 154);
 }
 
 .contact h2 {
-  color: var(--primary-color);
+  color: rgb(160, 41, 67);
 }
 
 .contact-info {
@@ -462,11 +462,11 @@ section {
 }
 
 .contact-info div {
-  color: white;
+  color: grey;
 }
 
 .contact-info h3 {
-  color: var(--primary-color);
+  color: rgb(160, 41, 67);
   font-size: 32px;
 }
 
