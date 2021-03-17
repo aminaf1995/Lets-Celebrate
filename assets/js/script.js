@@ -48,3 +48,6 @@ function imdbFunction() {
       responseContainerEl.appendChild(gifImg);
     });
 }
+
+
+
