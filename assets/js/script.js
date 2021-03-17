@@ -12,14 +12,30 @@ function myFunction() {
     '&key=AIzaSyDSjKl3kb7QXntrm9amPQnhhqFQ2UhRwm0'
   )
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(function(response) {
+      console.log(response);
+      // Create a variable that will select the <div> where the GIF will be displayed
+      var responseContainerEl = document.querySelector('#response-container');
+
+      // Empty out the <div> before we append a GIF to it
+      responseContainerEl.innerHTML = '';
+
+      var gifImg = document.createElement('h1');
+      gifImg.textContent = 'Youtube Song : ' + response.items[0].snippet.title;
+   
+      // Append 'gifImg' to the <div>
+      responseContainerEl.appendChild(gifImg);
+    });
+
 
     fetch(
       'https://imdb-api.com/en/API/Keyword/k_wmu1kuc6/' +
     searchTerm
     )
       .then(response => response.json())
-      .then(data => console.log(data));
+      .then(function(response) {
+        console.log(response);
+      });
 
 
     
