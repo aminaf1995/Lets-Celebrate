@@ -82,9 +82,9 @@ Features:
 <!-- PROJECT LINKS -->
 ## Project Links
 
-Hosted Link: [https://aminaf1995.github.io/prices/](https://aminaf1995.github.io/prices/)
+Hosted Link: [https://aminaf1995.github.io/prices/](https://aminaf1995.github.io/Lets-Celebrate/)
 
-Repository Link: [https://github.com/aminaf1995/prices](https://github.com/aminaf1995/prices)
+Repository Link: [https://github.com/aminaf1995/prices](https://github.com/aminaf1995/Lets-Celebrate)
 
 <!-- CONTACT -->
 ## Contact
