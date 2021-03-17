@@ -1,4 +1,4 @@
-function myFunction() {
+function youtubeFunction() {
   // Create a variable called `searchTerm` that will use `document.querySelector()` to target the `id` of the input
   // Use `.value` to capture the value of the input and store it in the variable
   var searchTerm = document.querySelector('#searchVibe').value;
@@ -27,17 +27,24 @@ function myFunction() {
       responseContainerEl.appendChild(gifImg);
     });
 
+}
 
-    fetch(
-      'https://imdb-api.com/en/API/Keyword/k_wmu1kuc6/' +
-    searchTerm
-    )
-      .then(response => response.json())
-      .then(function(response) {
-        console.log(response);
-      });
+function imdbFunction() {
+  var searchTerm = document.querySelector('#searchVibe').value;
+  var x = document.getElementById("rating").value;
+  //document.getElementById("demo").innerHTML = "You selected: " + x;
 
+  fetch(
+    'https://imdb-api.com/en/API/Keyword/k_wmu1kuc6/' +
+  searchTerm
+  )
+    .then(response => response.json())
+    .then(function(response) {
+      console.log(response);
+      var gifImg = document.createElement('h1');
+      gifImg.textContent = 'YMovie : ' + response.items[0].title;
 
-    
-
+      // Append 'gifImg' to the <div>
+      responseContainerEl.appendChild(gifImg);
+    });
 }
