@@ -66,15 +66,15 @@
           <div>
             Genre:
             <!-- Add a select menu with an id ratin of 'genre'-->
-            <select id="rating">
-              <option value="Romantic">Romantic</option>
+            <select id="rating" onchange="imdbFunction()">
+              <option value="dramas">Drama</option>
               <option value="Comedy">Comedy</option>
               <option value="Action">Action</option>
               <option value="Horror">Horror</option>
               <option value="Rom-Com">Rom-Com</option>
             </select>
           </div>
-          <button onclick="myFunction()">Let the date begin!</button>
+          <button onclick="youtubeFunction()">Let the date begin!</button>
           <div id="response-container"></div>
         </form>
       </div>
