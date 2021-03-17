@@ -51,3 +51,16 @@ function imdbFunction() {
 
 
 
+const feedback = document.getElementById("feedback-form")
+
+feedback.addEventListener("submit", (f) => {
+ f.preventDefault ();
+  if (!document.getElementById("contact-message").value){
+    console.log("Form is empty");
+  } else { 
+    console.log("Info received")
+  } 
+});
+
+
+
