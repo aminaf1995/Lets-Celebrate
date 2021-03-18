@@ -22,6 +22,9 @@
             <a href="#second-date">Second Date</a>
           </li>
           <li>
+            <a href="#moviesuggestions">Date Movies</a>
+          </li>
+          <li>
             <a href="#6-months">6 Months</a>
           </li>
           <li>
@@ -46,7 +49,7 @@
         </p>
       </div>
 
-      <div class="hero-form">
+      <div id="response" class="hero-form">
         <h3>Let's Get Started</h3>
         <p>Tell us how you're feeling.</p>
         <form>
@@ -68,7 +71,7 @@
             Genre:
             <!-- Add a select menu with an id ratin of 'genre'-->
             <select id="rating" onchange="imdbFunction()">
-              <option value="dramas">Drama</option>
+              <option value="dramas">Home</option>
               <option value="Comedy">Comedy</option>
               <option value="Action">Action</option>
               <option value="Horror">Horror</option>
@@ -248,99 +251,103 @@
         </h2>
       </div>
 
-      <div class="contact-info">
-        <div>
-          <h3>Holy Cow</h3>
-          <p>
-            Look at you! Acing this whole love thing. 
-            <br/>
-            Congradulations, you already know what you are doing. 
-            Just tell us your mood and we will do the rest. 
-          <p>
-            <div class="contact-info">
-              <div>
-                <h3>Let's Celebrate</h3>
-                <p>
-                  How did we do? Please let us know if you enjoyed our suggestions
-                  or if we could do better. We are always looking improve our users experience.   
-                  <br/>
-                  <br>
-                  Thank you for coming to our site, and we wish you all the best in your romantic endevours. 
-                  Stay tuned, as we are looking for a way to add more events other than just dating. Shot us some 
-                  of your suggestions and we will see if we can make it happen.  
-                </p>
-    </section>
-
-    <!--movie suggestion boxs-->
-
-    <h1 class="moviesuggestions">
-      Date Night Movies
-    </h1>
-
-     <div class="movie-wrapper">
-  <div class="container movie-container">
-    <div class="row">
-      <div class="col-sm-4 box-movies hovermovies">
-        <div class="movie-icon">
-          <img alt="comedy-stepbothers" src=https://i0.wp.com/www.orphicpixel.com/wp-content/uploads/2012/03/image021.jpg?resize=550%2C871&ssl=1>
-        </div>
-        <div class="info text-center">
-          <h3 class="movie-deatils">
-            Step Brothers
-          </h3>
-        </div>
-        <div class="info col-lg-10 col-lg-offset-1">
-          <ul>
-            <li>Two aimless middle-aged losers still living at home are forced against their will to become roommates when their parents marry.
-            </li>
-           
-          
-            <li> Starring:  Will Ferrell, John C. Reilly, Mary Steenburgen
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-4 box-movies hovermovies">
-        <div class="movie-icon">
-          <img alt="romcom-definietly maybe" src="https://upload.wikimedia.org/wikipedia/en/a/a0/Definitely_Maybe_poster.jpg">
-        </div>
-        <div class="info text-center">
-          <h3 class="movie-details">
-            Definitely, Maybe
-          </h3>
-        </div>
-        <div class="info col-lg-10 col-lg-offset-1">
-          <ul>
-            <li> Set in Manhattan, A man admist a divorce tells his yound daughter of how he met her mother
-            </li>
       
+      <!--movie suggestion boxs-->
       
-            <li>Starring Ryan Reynolds, Isla Fisher, and Elizabath Banks  
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-4 box-movies hovermovies">
-        <div class="movie-icon">
-          <img alt="romance- the lake house" src="https://res.cloudinary.com/jerrick/image/upload/v1550270384/islfhb9vsb3g7aqts5au.jpg" style="width: 100px; height: 176px;">
-        </div>
-        <div class="info text-center">
-          <h3 class="movie-details">
-            The Lake House
-          </h3>
-        </div>
-        <div class="info col-lg-10 col-lg-offset-1">
-          <ul>
-            <li>Tells the story of a romance that spans years but involves only a few kisses
-            </li>
-          
-            <li>Starring Sandra Bullock and Keenu Reeves
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <h1 id="moviesuggestions" class="moviesuggestions">
+        Date Night Movies
+      </h1>
+      
+      <div class="movie-wrapper">
+        <div class="container movie-container">
+          <div class="row">
+            <div class="col-sm-4 box-movies hovermovies">
+              <div class="movie-icon">
+                <img alt="comedy-stepbothers" src=https://i0.wp.com/www.orphicpixel.com/wp-content/uploads/2012/03/image021.jpg?resize=550%2C871&ssl=1>
+              </div>
+              <div class="info text-center">
+                <h3 class="movie-deatils">
+                  Step Brothers
+                </h3>
+              </div>
+              <div class="info col-lg-10 col-lg-offset-1">
+                <ul>
+                  <li>Two aimless middle-aged losers still living at home are forced against their will to become roommates when their parents marry.
+                  </li>
+                  
+                  
+                  <li> Starring:  Will Ferrell, John C. Reilly, Mary Steenburgen
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 box-movies hovermovies">
+              <div class="movie-icon">
+                <img alt="romcom-definietly maybe" src="https://upload.wikimedia.org/wikipedia/en/a/a0/Definitely_Maybe_poster.jpg">
+              </div>
+              <div class="info text-center">
+                <h3 class="movie-details">
+                  Definitely, Maybe
+                </h3>
+              </div>
+              <div class="info col-lg-10 col-lg-offset-1">
+                <ul>
+                  <li> Set in Manhattan, A man admist a divorce tells his yound daughter of how he met her mother
+                  </li>
+                  
+                  
+                  <li>Starring Ryan Reynolds, Isla Fisher, and Elizabath Banks  
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 box-movies hovermovies">
+              <div class="movie-icon">
+                <img alt="romance- the lake house" src="https://res.cloudinary.com/jerrick/image/upload/v1550270384/islfhb9vsb3g7aqts5au.jpg" style="width: 100px; height: 176px;">
+              </div>
+              <div class="info text-center">
+                <h3 class="movie-details">
+                  The Lake House
+                </h3>
+              </div>
+              <div class="info col-lg-10 col-lg-offset-1">
+                <ul>
+                  <li>Tells the story of a romance that spans years but involves only a few kisses
+                  </li>
+                  
+                  <li>Starring Sandra Bullock and Keenu Reeves
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info">
+            <div>
+              <h3>Holy Cow</h3>
+              <p>
+                Look at you! Acting this whole love thing. 
+                <br/>
+                Congradulations, you already know what you are doing. 
+                Just tell us your mood and we will do the rest. 
+              <p>
+                <div class="contact-info">
+                  <div>
+                    <h3>Let's Celebrate</h3>
+                    <p>
+                      How did we do? Please let us know if you enjoyed our suggestions
+                      or if we could do better. We are always looking improve our users experience.   
+                      <br/>
 
+
+          
+    
+
+                      <br>
+                      Thank you for coming to our site, and we wish you all the best in your romantic endevours. 
+                      Stay tuned, as we are looking for a way to add more events other than just dating. Shot us some 
+                      of your suggestions and we will see if we can make it happen.  
+                    </p>
+        </section>
 
     </secion>
     <!-- "reach out" end -->
