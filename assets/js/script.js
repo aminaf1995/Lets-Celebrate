@@ -1,3 +1,11 @@
+
+
+var responseContainerEL = document.getElementById('response')
+
+
+
+
+
 function youtubeFunction() {
   // Create a variable called `searchTerm` that will use `document.querySelector()` to target the `id` of the input
   // Use `.value` to capture the value of the input and store it in the variable
@@ -30,37 +38,28 @@ function youtubeFunction() {
 }
 
 function imdbFunction() {
-  var searchTerm = document.querySelector('#searchVibe').value;
-  var x = document.getElementById("rating").value;
+  var searchTerm = document.getElementById('rating').value;
+
   //document.getElementById("demo").innerHTML = "You selected: " + x;
 
   fetch(
-    'https://imdb-api.com/en/API/Keyword/k_wmu1kuc6/' +
-  searchTerm
-  )
+    'https://api.themoviedb.org/3/search/movie?api_key=9e8138b4ad6d91ea8b569ce92c1493ab&query=' + searchTerm +'f' ) 
+ 
     .then(response => response.json())
+
     .then(function(response) {
-      console.log(response);
-      var gifImg = document.createElement('h1');
-      gifImg.textContent = 'YMovie : ' + response.items[0].title;
+    
+      var gifImg = document.createElement("h1");
+      gifImg.textContent = 'Movie : ' + response.title;
 
       // Append 'gifImg' to the <div>
-      responseContainerEl.appendChild(gifImg);
-    });
+     responseContainerEL.appendChild(gifImg);
+    })
 }
 
 
 
-const feedback = document.getElementById("feedback-form")
 
-feedback.addEventListener("submit", (f) => {
- f.preventDefault ();
-  if (!document.getElementById("contact-message").value){
-    console.log("Form is empty");
-  } else { 
-    console.log("Info received")
-  } 
-});
 
 
 
