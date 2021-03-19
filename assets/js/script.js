@@ -15,46 +15,47 @@ function youtubeFunction() {
   // Remember to add your API key at the end
   //debugger
   fetch(
-    'https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=' +
-    searchTerm +
-    '&key=AIzaSyDSjKl3kb7QXntrm9amPQnhhqFQ2UhRwm0'
+    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=" +
+      searchTerm +
+      "&key=AIzaSyC6SlQNkAvha28BgZ7lnzE63fr3x-TIzzg"
   )
-    .then(response => response.json())
-    .then(function(response) {
+    .then((response) => response.json())
+    .then(function (response) {
       console.log(response);
+      alert('iam all man')
       // Create a variable that will select the <div> where the GIF will be displayed
-      var responseContainerEl = document.querySelector('#response-container');
+      var responseContainerEl = document.querySelector("#response-container");
 
       // Empty out the <div> before we append a GIF to it
-      responseContainerEl.innerHTML = '';
+      responseContainerEl.innerHTML = "";
 
-      var gifImg = document.createElement('h1');
-      gifImg.textContent = 'Youtube Song : ' + response.items[0].snippet.title;
-   
+      var gifImg = document.createElement("h1");
+      gifImg.textContent = "Youtube Song : " + response.items[0].snippet.title;
+
       // Append 'gifImg' to the <div>
       responseContainerEl.appendChild(gifImg);
     });
 
 }
 
+
+
 function imdbFunction() {
   var searchTerm = document.getElementById('rating').value;
 
   //document.getElementById("demo").innerHTML = "You selected: " + x;
 
-  fetch(
-    'https://api.themoviedb.org/3/search/movie?api_key=9e8138b4ad6d91ea8b569ce92c1493ab&query=' + searchTerm +'f' ) 
- 
-    .then(response => response.json())
+  fetch("https://imdb-api.com/en/API/Search/k_iiql2sll/" + searchTerm)
+    .then((response) => response.json())
 
-    .then(function(response) {
-    
-      var gifImg = document.createElement("h1");
-      gifImg.textContent = 'Movie : ' + response.title;
+    .then(function (response) {
+      console.log(response);
+      var gifImg = document.createElement("img");
+      gifImg.src = response.results[0].image;
 
       // Append 'gifImg' to the <div>
-     responseContainerEL.appendChild(gifImg);
-    })
+      responseContainerEL.appendChild(gifImg);
+    });
 }
 
 
