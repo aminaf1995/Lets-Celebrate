@@ -1,4 +1,5 @@
 var responseContainerEL = document.getElementById("response");
+var movieContainerEL = document.getElementById('movieBox')
 
 // function youtubeFunction()
 // preventDefault()
@@ -30,6 +31,8 @@ var responseContainerEL = document.getElementById("response");
 //       responseContainerEl.appendChild(gifImg);
 //     });
 // }
+
+
 
 function imdbFunction() {
   var searchTerm = document.getElementById("rating").value;
