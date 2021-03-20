@@ -48,38 +48,30 @@
            
         </p>
       </div>
-
+    </section>
+    <section class="apibox" >
       <div id="response" class="hero-form">
-        <h3>Let's Get Started</h3>
-        <p>Tell us how you're feeling.</p>
+        <h3>Choose a Random Song</h3>
         <form>
           <label for="vibe">Pick Your Music Vibe</label>
           <input type="text" placeholder="Your Vibe" id="searchVibe" name="vibe" class="form-input" />
-          <p>
-            Have you been on a date?
-            <span class="radio-wrapper">
-              <input type="radio" name="trainer-confirm" id="trainer-yes" />
-              <label for="trainer-yes">Yes</label>
-            </span>
-            <span class="radio-wrapper">
-              <input type="radio" name="trainer-confirm" id="trainer-no" />
-              <label for="trainer-no">No</label>
-            </span>
-          </p>
+          
     <!-- Add API and Java calls -->
-          <div>
-            Movie Genre:
-            <!-- Add a select menu with an id ratin of 'genre'-->
-            <select id="rating" onchange="imdbFunction()">
-              <option value="Sam">Loner</option>
-              <option value="Comedy">Comedy</option>
-              <option value="Loner">Action</option>
-              <option value="Horror">Harry</option>
-              <option value="Rom-Com">Rom-Com</option>
-            </select>
-          </div>
-          <button class='button'>Let the date begin!</button>
+          <button class='button'>Randomize</button>
           <div id="response-container"></div>
+        </form>
+      </div>
+  
+
+    <div id="movieBox" class="hero-form">
+        <h3>Choose a random Movie</h3>
+        <form>
+          <label for="movie">Choose a movie genre</label>
+          <input type="text" placeholder="Pick a Movie" id="genreMovie" name="movie" class="form-input" />
+          
+    <!-- Add API and Java calls -->
+          <button class='search'>Randomize</button>
+          <div id="movie-container"></div>
         </form>
       </div>
     </section>

@@ -1,4 +1,5 @@
 var responseContainerEL = document.getElementById("response");
+var movieContainerEL = document.getElementById('movieBox')
 
 // function youtubeFunction()
 // preventDefault()
@@ -31,37 +32,71 @@ var responseContainerEL = document.getElementById("response");
 //     });
 // }
 
-function imdbFunction() {
-  var searchTerm = document.getElementById("rating").value;
+
+
+// function imdbFunction() {
+//   var searchTerm = document.getElementById("movieBox").value;
+
+//   //document.getElementById("demo").innerHTML = "You selected: " + x;
+
+//   fetch("https://imdb-api.com/en/API/Search/k_iiql2sll/" + searchTerm)
+//     .then((response) => response.json())
+
+//     .then(function (response) {
+//       console.log(response);
+//       var gifImg = document.createElement("img");
+//       gifImg.src = response.results[0].image;
+
+//       // Append 'gifImg' to the <div>
+//       movieContainerEL.appendChild(gifImg);
+//     });
+// }
+
+
+
+
+
+document.querySelector(".search").addEventListener("click", function(event) {
+  event;
+var searchTerm = document.getElementById("genreMovie").value
+
+event.preventDefault();
 
   //document.getElementById("demo").innerHTML = "You selected: " + x;
 
   fetch("https://imdb-api.com/en/API/Search/k_iiql2sll/" + searchTerm)
+
     .then((response) => response.json())
 
     .then(function (response) {
       console.log(response);
-      var gifImg = document.createElement("img");
-      gifImg.src = response.results[0].image;
+      var gifImg = document.createElement("h1");
+      gifImg.textContent = response.results[6].title;
 
       // Append 'gifImg' to the <div>
-      responseContainerEL.appendChild(gifImg);
+      movieContainerEL.appendChild(gifImg);
     });
 }
+
+)
+
+
+
+
 
 document.querySelector(".button").addEventListener(
   "click",
   function (event) {
     event;
 
-    var searchTerm = document.querySelector("#searchVibe").value;
+    var seaTerm = document.querySelector("#searchVibe").value;
     // Make a `fetch` request concatenating the `searchTerm` to the query URL
     // Remember to add your API key at the end
     //debugge
     event.preventDefault();
 
     fetch(
-      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=happy&key=AIzaSyC6SlQNkAvha28BgZ7lnzE63fr3x-TIzzg"
+      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=" + seaTerm + "&key=AIzaSyC6SlQNkAvha28BgZ7lnzE63fr3x-TIzzg"
     )
       .then((res) => {
         return res.json();
