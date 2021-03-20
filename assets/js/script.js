@@ -58,7 +58,7 @@ var movieContainerEL = document.getElementById('movieBox')
 
 document.querySelector(".search").addEventListener("click", function(event) {
   event;
-var searchTerm = document.getElementById("genreMovie").value
+var searchTerm = document.querySelector("#genreMovie").value;
 
 event.preventDefault();
 
@@ -66,27 +66,34 @@ event.preventDefault();
 
   fetch("https://imdb-api.com/en/API/Search/k_iiql2sll/" + searchTerm)
 
-    .then((response) => response.json())
+    .then((response) => {return response.json(); })
 
-    .then(function (response) {
-      console.log(response);
+    .then(function (moviedata) {
+      //console.log(response)
+     
+      
+      var movieContainerEL = document.querySelector("#movie-container");
+
+      // Empty out the <div> before we append a GIF to it
+      movieContainerEL.innerHTML = "";
+      //console.log(resContainerEl.innerHTML);
+
       var gifImg = document.createElement("h1");
-      gifImg.textContent = response.results[6].title;
+
+      gifImg.textContent = moviedata.results[6].title;
 
       // Append 'gifImg' to the <div>
       movieContainerEL.appendChild(gifImg);
     });
-}
-
+},
+false
 )
 
 
 
 
 
-document.querySelector(".button").addEventListener(
-  "click",
-  function (event) {
+document.querySelector(".button").addEventListener("click",function(event) {
     event;
 
     var seaTerm = document.querySelector("#searchVibe").value;
@@ -102,7 +109,7 @@ document.querySelector(".button").addEventListener(
         return res.json();
       })
       .then(function (data) {
-        console.log(data);;
+        //console.log(data);;
         // Create a variable that will select the <div> where the GIF will be displayed
         var responseContainerEl = document.querySelector("#response-container");
 
