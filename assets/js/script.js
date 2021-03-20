@@ -89,14 +89,14 @@ document.querySelector(".button").addEventListener(
   function (event) {
     event;
 
-    var searchTerm = document.querySelector("#searchVibe").value;
+    var seaTerm = document.querySelector("#searchVibe").value;
     // Make a `fetch` request concatenating the `searchTerm` to the query URL
     // Remember to add your API key at the end
     //debugge
     event.preventDefault();
 
     fetch(
-      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=happy&key=AIzaSyC6SlQNkAvha28BgZ7lnzE63fr3x-TIzzg"
+      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=" + seaTerm + "&key=AIzaSyC6SlQNkAvha28BgZ7lnzE63fr3x-TIzzg"
     )
       .then((res) => {
         return res.json();
