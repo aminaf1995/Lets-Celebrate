@@ -58,7 +58,7 @@ var movieContainerEL = document.getElementById('movieBox')
 
 document.querySelector(".search").addEventListener("click", function(event) {
   event;
-var searchTerm = document.getElementById("movieBox").value
+var searchTerm = document.getElementById("genreMovie").value
 
 event.preventDefault();
 
@@ -70,8 +70,8 @@ event.preventDefault();
 
     .then(function (response) {
       console.log(response);
-      var gifImg = document.createElement("img");
-      gifImg.src = response.results[0].image;
+      var gifImg = document.createElement("h1");
+      gifImg.textContent = response.results[6].title;
 
       // Append 'gifImg' to the <div>
       movieContainerEL.appendChild(gifImg);
