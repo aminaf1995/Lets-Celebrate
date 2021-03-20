@@ -35,7 +35,7 @@ var movieContainerEL = document.getElementById('movieBox')
 
 
 function imdbFunction() {
-  var searchTerm = document.getElementById("rating").value;
+  var searchTerm = document.getElementById("movieBox").value;
 
   //document.getElementById("demo").innerHTML = "You selected: " + x;
 
@@ -48,9 +48,19 @@ function imdbFunction() {
       gifImg.src = response.results[0].image;
 
       // Append 'gifImg' to the <div>
-      responseContainerEL.appendChild(gifImg);
+      movieContainerEL.appendChild(gifImg);
     });
 }
+
+
+
+
+
+
+
+
+
+
 
 document.querySelector(".button").addEventListener(
   "click",

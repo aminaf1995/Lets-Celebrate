@@ -110,6 +110,11 @@ section {
   padding: 60px;
 }
 
+.apibox{
+  display: flex;
+  justify-items: space-around;
+}
+
 /* HERO STYLES START */
 .hero {
   background-image: url('https://www.gannett-cdn.com/presto/2019/07/02/USAT/b0a22d42-e938-4b05-98cf-902fdac6dd20-Sparklers.jpg?width=1320&height=892&fit=crop&format=pjpg&auto=webp');
