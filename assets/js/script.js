@@ -34,12 +34,38 @@ var movieContainerEL = document.getElementById('movieBox')
 
 
 
-function imdbFunction() {
-  var searchTerm = document.getElementById("movieBox").value;
+// function imdbFunction() {
+//   var searchTerm = document.getElementById("movieBox").value;
+
+//   //document.getElementById("demo").innerHTML = "You selected: " + x;
+
+//   fetch("https://imdb-api.com/en/API/Search/k_iiql2sll/" + searchTerm)
+//     .then((response) => response.json())
+
+//     .then(function (response) {
+//       console.log(response);
+//       var gifImg = document.createElement("img");
+//       gifImg.src = response.results[0].image;
+
+//       // Append 'gifImg' to the <div>
+//       movieContainerEL.appendChild(gifImg);
+//     });
+// }
+
+
+
+
+
+document.querySelector(".search").addEventListener("click", function(event) {
+  event;
+var searchTerm = document.getElementById("movieBox").value
+
+event.preventDefault();
 
   //document.getElementById("demo").innerHTML = "You selected: " + x;
 
   fetch("https://imdb-api.com/en/API/Search/k_iiql2sll/" + searchTerm)
+
     .then((response) => response.json())
 
     .then(function (response) {
@@ -52,11 +78,7 @@ function imdbFunction() {
     });
 }
 
-
-
-
-
-
+)
 
 
 
