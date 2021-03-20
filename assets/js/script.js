@@ -69,7 +69,7 @@ event.preventDefault();
     .then((response) => {return response.json(); })
 
     .then(function (moviedata) {
-      //console.log(response)
+      console.log(response)
      
       
       var movieContainerEL = document.querySelector("#movie-container");
@@ -80,7 +80,7 @@ event.preventDefault();
 
       var gifImg = document.createElement("h1");
 
-      gifImg.textContent = moviedata.results[6].title;
+      gifImg.textContent = moviedata.results[5].title;
 
       // Append 'gifImg' to the <div>
       movieContainerEL.appendChild(gifImg);
