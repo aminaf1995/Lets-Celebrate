@@ -59,7 +59,7 @@ var movieContainerEL = document.getElementById('movieBox')
 document.querySelector(".search").addEventListener("click", function(event) {
   event;
 var searchTerm = document.querySelector("#genreMovie").value;
-
+//allows the erase
 event.preventDefault();
 
   //document.getElementById("demo").innerHTML = "You selected: " + x;
